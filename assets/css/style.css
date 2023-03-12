@@ -430,14 +430,27 @@ h6 {
     right: 50px;
 }
 
+@media (max-width: 1024px) {
+    #hero .carousel-container {
+        display: flex;
+        align-items: flex-end;
+        position: absolute;
+        top: 130px;
+        left: 40px;
+        right: 50px;
+    }
+
+    #hero .carousel-content h2 {
+        font-size: 30px !important;
+    }
+}
+
 #hero .carousel-content {
-    background: rgba(28, 23, 21, 0.4);
     padding: 20px;
     color: #fff;
     -webkit-animation-duration: 0.5s;
     animation-duration: 0.5s;
     text-align: left;
-    /* border-top: 5px solid #f03c02; */
 }
 
 #hero .carousel-content h2 {
@@ -2342,6 +2355,16 @@ section {
     rotate: 225deg;
 }
 
+@media (max-width: 1024px) {
+    .step-arrow-1 {
+        display: none;
+    }
+
+    .step-arrow-2 {
+        display: none;
+    }
+}
+
 /* Home Hero Cont  */
 
 .home-div {
@@ -2533,6 +2556,12 @@ section {
 }
 
 @media (max-width: 1024px) {
+    .step-row {
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width: 1024px) {
     .process-right:after {
         display: none;
     }
@@ -2581,7 +2610,6 @@ section {
         transform: translateY(0rem);
     }
 }
-
 .portfolio-details-slider img {
     border-radius: 2rem !important ;
     -webkit-box-shadow: 0 30px 25px rgb(2 0 103 / 23%);
@@ -2634,10 +2662,10 @@ section {
         display: block;
     }
     .card-3 .card-heading {
-        display: block;
-        width: 100%;
+        display: block !important;
+        width: 100% !important ;
         padding-top: 400px;
-        background-position: center center;
+        background-position: center;
     }
     .card-3 .card-body {
         display: block;

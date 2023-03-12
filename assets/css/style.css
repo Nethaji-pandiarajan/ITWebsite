@@ -147,8 +147,8 @@ h6 {
 
 #header .logo img {
     padding: 0;
-    margin: 0;
-    max-height: 40px;
+    margin: 0 0 2px;
+    max-height: 70px;
 }
 
 .scrolled-offset {
@@ -201,12 +201,12 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover > a {
-    color: #f03c02;
+    color: #f26422;
 }
 
 .navbar .getstarted,
 .navbar .getstarted:focus {
-    background: #f03c02;
+    background: #f26422;
     padding: 8px 20px;
     margin-left: 30px;
     border-radius: 4px;
@@ -216,7 +216,7 @@ h6 {
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
     color: #fff;
-    background: #fd490f;
+    background: #f26422;
 }
 
 .navbar .dropdown ul {
@@ -253,7 +253,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover > a {
-    color: #f03c02;
+    color: #f26422;
 }
 
 .navbar .dropdown:hover > ul {
@@ -738,15 +738,15 @@ section {
 
 .services .icon-box:hover .icon {
     background: #fff;
-    border: 2px solid #f03c02;
+    border: 2px solid #f26422;
 }
 
 .services .icon-box:hover .icon i {
-    color: #f03c02;
+    color: #f26422;
 }
 
 .services .icon-box:hover .title a {
-    color: #f03c02;
+    color: #f26422;
 }
 
 .services .description {

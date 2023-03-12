@@ -14,7 +14,9 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Muli:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Muli:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
@@ -30,12 +32,32 @@
     </script>
   <!-- Template Main CSS File -->
   <link href="/assets/css/style.css" rel="stylesheet">
+  <link href="/assets/css/stepper.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     $(document).ready(function () {
       $("#header").load("header.html");
       $("#footer1").load("footer.html");
     });
   </script>
+  <style>
+    .aboutUsPills{
+      color : #f26422 !important;
+    }
+   .aboutUsPills:hover{
+      color : #3188c9;
+   }
+   .aboutUsPills:active{
+      color : #3188c9 !important;
+   }
+   .nav-link.active{
+      color : #3188c9 !important;
+   }
+   .step-by-step{
+   
+   }
+  </style>
 </head>
 
 <body>
@@ -44,7 +66,8 @@
   <section id="topbar" class="d-flex align-items-center">
     <div class="container d-flex justify-content-center justify-content-md-between">
       <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">contact@example.com</a></i>
+        <i class="bi bi-envelope d-flex align-items-center"><a
+            href="mailto:contact@example.com">contact@example.com</a></i>
         <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
       </div>
       <div class="social-links d-none d-md-flex align-items-center">
@@ -59,7 +82,7 @@
   <!-- ======= Header ======= -->
   <div id="header"></div>
 
-  
+
 
   <!-- ======= Hero Section ======= -->
   <section id="hero">
@@ -72,7 +95,9 @@
           <div class="carousel-container">
             <div class="carousel-content animate__animated animate__fadeInUp">
               <h2>Welcome to <span>Flattern</span></h2>
-              <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+              <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam.
+                Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus
+                deleniti vel. Minus et tempore modi architecto.</p>
               <div class="text-center"><a href="" class="btn-get-started">Read More</a></div>
             </div>
           </div>
@@ -83,7 +108,9 @@
           <div class="carousel-container">
             <div class="carousel-content animate__animated animate__fadeInUp">
               <h2>Lorem Ipsum Dolor</h2>
-              <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+              <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam.
+                Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus
+                deleniti vel. Minus et tempore modi architecto.</p>
               <div class="text-center"><a href="" class="btn-get-started">Read More</a></div>
             </div>
           </div>
@@ -94,7 +121,9 @@
           <div class="carousel-container">
             <div class="carousel-content animate__animated animate__fadeInUp">
               <h2>Sequi ea ut et est quaerat</h2>
-              <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+              <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam.
+                Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus
+                deleniti vel. Minus et tempore modi architecto.</p>
               <div class="text-center"><a href="" class="btn-get-started">Read More</a></div>
             </div>
           </div>
@@ -117,87 +146,182 @@
 
   <main id="main">
 
-    <!-- ======= Cta Section ======= -->
-    <section id="cta" class="cta">
+  
+
+    <!-- ======= About Us Section ======= -->
+
+
+    <section id="about-us" class="about-us">
+      <div class="section-title" data-aos="fade-up">
+        <h2>About <strong>Us</strong></h2>
+      </div>
+
       <div class="container">
 
-        <div class="row">
-          <div class="col-lg-9 text-center text-lg-left">
-            <h3>We've created more than <span>200 websites</span> this year!</h3>
-            <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-          <div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="#">Request a quote</a>
+        <div class="row no-gutters">
+          <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start"
+            data-aos="fade-right"></div>
+          <div class="col-xl-7 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch">
+            <div class="content d-flex flex-column justify-content-center">
+              <h4 data-aos="fade-up " style="padding-bottom: 1.5rem;"><strong>Company Overview</strong></h4>
+              <p data-aos="fade-up">
+                Amsa IT is a reliable IT service company in Dubai dedicated to helping businesses achieve their
+                objectives when it comes to digital transformation and software services. With a team of experts, we
+                work collaboratively and develop custom software solutions that meet the specific requirements of our
+                global clients. We provide personalised services and support to ensure that your IT solutions are always
+                up-to-date and optimised for your needs.
+              </p>
+              <!-- Tabs navs -->
+              <div data-aos="fade-up" class=" mt-2">
+                <nav class="about-pills">
+                  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <button class="aboutUsPills nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Solutions We Provide</button>
+                    <button class="aboutUsPills nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Our Work</button>
+                    <button class="aboutUsPills nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Our Value</button>
+                  </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <p class="p-2 "> <ul>
+                      <li> Software Solutions </li>
+                      <li> Software Testing Services </li>
+                      <li> Digital Transformation </li>
+                      <li> Cloud Services </li>
+                      <li> Managed IT services </li>
+                      <li> IT Application </li>
+                      <li> Core and Digital Banking Services</li>
+                    </ul></p>
+                  </div>
+                  <div class="tab-pane mt-2 fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                    <p class="p-2">We take pride in our work and helping innovative enterprises, global businesses, IT service providers and software vendors to stay competitive with a comprehensive solution either it is cloud based solutions or digital transformation consultation or outsourced product development or strategic resourcing.</p>
+                  </div>
+                  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                    <p class="p-2">We believe that our success is tied to the success of our clients, and that's why we go above and beyond to ensure that our digital solutions meet their needs and exceed their expectations.</p>
+                  </div>
+                </div>
+
+              </div>
+              
+            </div><!-- End .content-->
           </div>
         </div>
 
       </div>
-    </section><!-- End Cta Section -->
+    </section><!-- End About Us Section -->
 
-       <!-- ======= About Us Section ======= -->
 
-       
-       <section id="about-us" class="about-us">
-        <div class="section-title" data-aos="fade-up">
-          <h2>About <strong>Us</strong></h2>
-        </div>
+    <section class="">
+      <div class="section-title" data-aos="fade-up">
+        <h2>Easy Steps<strong> to START</strong></h2> 
 
-        <div class="container">
+      </div>
+    <div class="our-blog p-3 m-0 bg-silver step-by-step">
+      <div class="container work-process  pb-3 pt-3">
+        
+      </div>
+          <!-- ============ step 1 =========== -->
+          <div class="row">
+              <div class="col-md-5">
+                  <div class="process-box process-left" data-aos="fade-right" data-aos-duration="1000">
+                      <div class="row">
+                          <div class="col-md-3">
+                              <div class="process-step">
+                                  <p class="m-0 p-0">Step</p>
+                                  <h2 class="m-0 p-0">01</h2>
+                              </div>
+                          </div>
+                          <div class="col-md-3">
+                              <h5>Select Service/Product  </h5>
+                              <p><small>Pick the service or product you would like to get from Amsa IT </small></p>
+                          </div>
+                      </div>
+                      <div class="process-line-l"></div>
+                  </div>
+              </div>
+              <div class="col-md-2"></div>
+              <div class="col-md-5">
+                 
+              </div>
+          
+          <!-- ============ step 2 =========== -->
+          
+              
+              <div class="col-md-5">
+                  
+              </div>
+              <div class="col-md-2"></div>
+              <div class="col-md-5">
+                  <div class="process-box process-right" data-aos="fade-left" data-aos-duration="1000">
+                      <div class="row">
+                          <div class="col-md-5">
+                              <div class="process-step">
+                                  <p class="m-0 p-0">Step</p>
+                                  <h2 class="m-0 p-0">02</h2>
+                              </div>
+                          </div>
+                          <div class="col-md-7">
+                              <h5>Get in Touch</h5>
+                              <p><small>E-mail your requirements or submit an enquiry </small></p>
+                          </div>
+                      </div>
+                      <div class="process-line-r"></div>
+                  </div>
+              </div>
   
-          <div class="row no-gutters">
-            <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start" data-aos="fade-right"></div>
-            <div class="col-xl-7 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch">
-              <div class="content d-flex flex-column justify-content-center">
-                <h4 data-aos="fade-up " style="padding-bottom: 1.5rem;" ><strong>Company Overview</strong></h4>
-                <p data-aos="fade-up">
-                  Amsa IT is a reliable IT service company in Dubai dedicated to helping businesses achieve their objectives when it comes to digital transformation and software services. With a team of experts, we work collaboratively and develop custom software solutions that meet the specific requirements of our global clients. We provide personalised services and support to ensure that your IT solutions are always up-to-date and optimised for your needs.
-                </p>
-                <!-- ### -->
-                <div class="row">
-                  <h4 data-aos="fade-up " style="padding-top:1.3rem;padding-bottom: .5rem;" ><strong> We Provide</strong></h4>
-
-                  <div class="col-md-6 icon-box mt-0" data-aos="fade-up">
-                    <i class="bi bi-code-slash"></i>
-                    <h4 style="margin-top: 1.5rem;" >Software Solutions</h4>
-                    <!-- <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p> -->
+         
+          <!-- ============ step 3 =========== -->
+          
+              <div class="col-md-5">
+                  <div class="process-box process-left" data-aos="fade-right" data-aos-duration="1000">
+                      <div class="row">
+                          <div class="col-md-5">
+                              <div class="process-step">
+                                  <p class="m-0 p-0">Step</p>
+                                  <h2 class="m-0 p-0">03</h2>
+                              </div>
+                          </div>
+                          <div class="col-md-7">
+                              <h5>Consult with us</h5>
+                              <p><small>Once we get your message, our team will reach you and provide the best solutions </small></p>
+                          </div>
+                      </div>
+                      <div class="process-line-l"></div>
                   </div>
-                  <div class="col-md-6 icon-box mt-0" data-aos="fade-up" data-aos-delay="100">
-                    <i class="bi bi-card-checklist"></i>
-                    <h4 style="margin-top: 1.5rem;" >Software Testing Services</h4>
-                    <!-- <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p> -->
+              </div>
+              <div class="col-md-2"></div>
+              <div class="col-md-5">
+                
+              </div>
+          
+          <!-- ============ step 4 =========== -->
+          
+              <div class="col-md-5">
+                 
+              </div>
+              <div class="col-md-2"></div>
+              <div class="col-md-5">
+                  <div class="process-box process-right" data-aos="fade-left" data-aos-duration="1000">
+                      <div class="row">
+                          <div class="col-md-5">
+                              <div class="process-step">
+                                  <p class="m-0 p-0">Step</p>
+                                  <h2 class="m-0 p-0">04</h2>
+                              </div>
+                          </div>
+                          <div class="col-md-7">
+                              <h5>Subscribe and let’s start</h5>
+                              <p><small>Subscribe for the solutions we recommend and let us help you achieve your goals  </small></p>
+                          </div>
+                      </div>
+                      <div class="process-line-r"></div>
                   </div>
-                  <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
-                    <i class="bi bi-bar-chart"></i>
-                    <h4 style="margin-top: 1.5rem;" >Digital Transformation</h4>
-                    <!-- <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p> -->
-                  </div>
-                  <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
-                    <i class="bi bi-cloud"></i>
-                    <h4 style="margin-top: 1.5rem;" >Cloud Services</h4>
-                    <!-- <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p> -->
-                  </div>
-                  <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
-                    <i class="bi bi-cpu"></i>
-                    <h4 style="margin-top: 1.5rem;" >Managed IT services</h4>
-                    <!-- <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p> -->
-                  </div>
-                  <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
-                    <i class="bi bi-pc-display-horizontal"></i>
-                    <h4 style="margin-top: 1.5rem;" >IT Application</h4>
-                    <!-- <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p> -->
-                  </div>
-                  <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="600">
-                    <i class="bi bi-bank"></i>
-                    <h4 style="margin-top: 1.2rem;" >Core and Digital Banking Services</h4>
-                    <!-- <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p> -->
-                  </div>
-                </div>
-              </div><!-- End .content-->
-            </div>
+              </div>
+              
+              
           </div>
-  
         </div>
-      </section><!-- End About Us Section -->
+      </div>
+    </section>
 
     <!-- ======= Services Section ======= -->
     <section id="services" class="services">
@@ -217,42 +341,56 @@
             <div class="icon-box" data-aos="fade-up">
               <div class="icon"><i class="bi bi-code-slash"></i></div>
               <h4 class="title"><a href="">IT Infrastructure Services</a></h4>
-              <p class="description">Get top-notch IT Infrastructure Services from Amsa IT to ensure your organisation's digital ecosystem is secure, scalable, and optimised for maximum productivity. Our expert team offers end-to-end solutions that cover everything from network design and implementation to data backup and disaster recovery.</p>
+              <p class="description">Get top-notch IT Infrastructure Services from Amsa IT to ensure your organisation's
+                digital ecosystem is secure, scalable, and optimised for maximum productivity. Our expert team offers
+                end-to-end solutions that cover everything from network design and implementation to data backup and
+                disaster recovery.</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
               <div class="icon"><i class="bi bi-reception-4"></i></div>
               <h4 class="title"><a href="">Network</a></h4>
-              <p class="description">Amsa IT network support services ensure your organisation's network infrastructure is operating smoothly and efficiently. Our skilled team offers round-the-clock monitoring, quick issue resolution, and proactive maintenance to prevent downtime.</p>
+              <p class="description">Amsa IT network support services ensure your organisation's network infrastructure
+                is operating smoothly and efficiently. Our skilled team offers round-the-clock monitoring, quick issue
+                resolution, and proactive maintenance to prevent downtime.</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
               <div class="icon"><i class="bi bi-cloud"></i></div>
               <h4 class="title"><a href="">Cloud services</a></h4>
-              <p class="description">Meet our cloud experts with a great experience in managing, deploying and supporting cloud solutions.</p>
+              <p class="description">Meet our cloud experts with a great experience in managing, deploying and
+                supporting cloud solutions.</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
               <div class="icon"><i class="bi bi-shield"></i></div>
               <h4 class="title"><a href="">Security</a></h4>
-              <p class="description">Get comprehensive protection for your organisation's computers, networks, programs, and data. With cyber threats becoming increasingly sophisticated, our team of experts uses cutting-edge technology and best practices to safeguard your valuable assets</p>
+              <p class="description">Get comprehensive protection for your organisation's computers, networks, programs,
+                and data. With cyber threats becoming increasingly sophisticated, our team of experts uses cutting-edge
+                technology and best practices to safeguard your valuable assets</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 ">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
               <div class="icon"><i class="bi bi-people-fill"></i></div>
               <h4 class="title"><a href="">Collaboration</a></h4>
-              <p class="description">We provide a seamless and efficient solution to manage the latest audio-visual technologies for remote teams. With features such as real-time collaboration, screen sharing, and video conferencing, our platform ensures that your team can work together effectively, regardless of their physical location.</p>
+              <p class="description">We provide a seamless and efficient solution to manage the latest audio-visual
+                technologies for remote teams. With features such as real-time collaboration, screen sharing, and video
+                conferencing, our platform ensures that your team can work together effectively, regardless of their
+                physical location.</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
               <div class="icon"><i class="bi bi-database"></i></div>
               <h4 class="title"><a href="">Database</a></h4>
-              <p class="description">Our Database Service is a cloud-based solution that provides an unique approach to continuously monitor, manage and optimise the scalable database functionality to businesses and organisations. It allows customers/users to store and retrieve data efficiently, securely, and reliably.</p>
+              <p class="description">Our Database Service is a cloud-based solution that provides an unique approach to
+                continuously monitor, manage and optimise the scalable database functionality to businesses and
+                organisations. It allows customers/users to store and retrieve data efficiently, securely, and reliably.
+              </p>
             </div>
           </div>
           <!-- <div class="col-lg-4 col-md-6 m-auto">
@@ -264,11 +402,10 @@
           </div> -->
         </div>
 
-        
-        
+
+
       </div>
-      <a class="read-more-btn "  href="#">Read More</a>
-      
+
     </section><!-- End Services Section -->
 
     <!-- ======= Portfolio Section ======= -->
@@ -298,8 +435,10 @@
             <div class="portfolio-info">
               <h4>Digital Learning Platform for Education Sector</h4>
               <!-- <p>App</p> -->
-              <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
-              <a href="projects/digital-learning.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+              <a href="projects/digital-learning.html" class="details-link" title="More Details"><i
+                  class="bx bx-link"></i></a>
             </div>
           </div>
 
@@ -308,8 +447,10 @@
             <div class="portfolio-info">
               <h4>IOT Solutions</h4>
               <!-- <p>Web</p> -->
-              <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="projects/iot-solutions.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="projects/iot-solutions.html" class="details-link" title="More Details"><i
+                  class="bx bx-link"></i></a>
             </div>
           </div>
 
@@ -318,8 +459,10 @@
             <div class="portfolio-info">
               <h4>AI Enabled Voice Assistant</h4>
               <!-- <p>App</p> -->
-              <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
-              <a href="projects/ai-voicechat.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
+              <a href="projects/ai-voicechat.html" class="details-link" title="More Details"><i
+                  class="bx bx-link"></i></a>
             </div>
           </div>
 
@@ -328,8 +471,10 @@
             <div class="portfolio-info">
               <h4>Digital Banking Solution</h4>
               <!-- <p>Card</p> -->
-              <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
-              <a href="projects/digital-banking.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
+              <a href="projects/digital-banking.html" class="details-link" title="More Details"><i
+                  class="bx bx-link"></i></a>
             </div>
           </div>
 
@@ -338,132 +483,30 @@
             <div class="portfolio-info">
               <h4>Cloud Telephony</h4>
               <!-- <p>Web</p> -->
-              <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
-              <a href="projects/cloud-telephony.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
+              <a href="projects/cloud-telephony.html" class="details-link" title="More Details"><i
+                  class="bx bx-link"></i></a>
             </div>
           </div>
 
 
 
-          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>App 3</h4>
-              <p>App</p>
-              <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Card 1</h4>
-              <p>Card</p>
-              <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Card 3</h4>
-              <p>Card</p>
-              <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div> -->
-
+        
         </div>
 
-        <a class="read-more-btn "  href="#">Read More</a>
 
 
       </div>
     </section><!-- End Portfolio Section -->
-
-    <!-- ======= Our Clients Section ======= -->
-    <!-- <section id="clients" class="clients">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <h2>Our <strong>Clients</strong></h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row no-gutters clients-wrap clearfix" data-aos="fade-up">
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <img src="assets/img/clients/client-1.png" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <img src="assets/img/clients/client-2.png" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <img src="assets/img/clients/client-3.png" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <img src="assets/img/clients/client-7.png" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <img src="assets/img/clients/client-8.png" class="img-fluid" alt="">
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-    <!-- End Our Clients Section --> 
 
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <div id="footer1"></div>
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>

@@ -886,7 +886,7 @@ section {
 }
 
 .portfolio-details .portfolio-details-slider img {
-    width: 80%;
+    width: 90%;
     border-radius: 0.5rem;
     margin-top: 3rem;
 }
@@ -2921,4 +2921,9 @@ input {
         top left/cover no-repeat;
     display: table-cell;
     width: 50%;
+}
+
+.service-img{
+    width: 1000px;
+    height: 600px;
 }

@@ -2924,6 +2924,6 @@ input {
 }
 
 .service-img{
-    width: 1000px;
-    height: 600px;
+    width: 100%;
+    height: 100%;
 }

@@ -1021,7 +1021,7 @@ section {
 }
 
 .about-us .image {
-    background: url("../img/about.jpg") center center no-repeat;
+    background: url("../Images/about.webp") center center no-repeat;
     background-size: cover;
     height: 500px;
 }

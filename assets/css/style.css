@@ -183,7 +183,7 @@ h6 {
     align-items: center;
     justify-content: space-between;
     padding: 10px 0 10px 20px;
-    font-size: 13px;
+    font-size: 15px;
     color: #65534c;
     white-space: nowrap;
     text-transform: uppercase;
@@ -240,7 +240,7 @@ h6 {
 
 .navbar .dropdown ul a {
     padding: 10px 20px;
-    font-size: 13px;
+    font-size: 15px;
     text-transform: none;
     font-weight: 500;
     color: #581601;
